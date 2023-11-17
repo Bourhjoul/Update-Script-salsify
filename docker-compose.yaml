@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  ruby:
+    build: .
+    environment:
+      - FTP_USERNAME=${FTP_USERNAME}
+      - FTP_HOST=${FTP_HOST}
+      - FTP_PASSWORD=${FTP_PASSWORD}
+      - SALSIFY_API_KEY=${SALSIFY_API_KEY}
+    volumes:
+      - "./:/app"
