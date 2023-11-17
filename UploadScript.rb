@@ -56,7 +56,6 @@ end
 
 
 
-# # Convert the extracted product data to JSON format
 api_endpoint = URI.parse("https://app.salsify.com")
 
 # Iterate over each product and send individual requests
@@ -76,7 +75,3 @@ products.each do |product|
   puts "Response from the API for #{product['Item_Name']}: #{response.code}"
 end
 
-
-
-
-puts "Salsify products updated successfully!"
