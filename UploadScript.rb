@@ -5,7 +5,9 @@ require 'net/http'
 require 'uri'
 require 'json'
 require 'openssl'
+require 'dotenv'
 
+Dotenv.load
 
 # Credentials for FTP server
 ftp_host = ENV["FTP_HOST"]

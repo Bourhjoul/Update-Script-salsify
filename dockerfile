@@ -4,8 +4,8 @@ FROM ruby:3.1
 # Install Nokogiri gem
 RUN gem install nokogiri
 
-# Install RestClient gem
-RUN gem install rest-client
+# Install dotenv gem
+RUN gem install dotenv
 
 # Copy the Ruby script to the Docker image
 COPY UploadScript.rb /app/UploadScript.rb
